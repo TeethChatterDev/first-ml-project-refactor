@@ -1,0 +1,23 @@
+# Training Configuration
+train:
+  # General Training Settings
+  n_folds: 5  # K-Fold Cross Validation
+  use_cross_validation: true
+
+  # Early Stopping (for models that support it)
+  early_stopping:
+    enabled: true
+    patience: 50
+    metric: rmse  # rmse, mae, r2
+
+  # Evaluation Metrics
+  metrics:
+    - mae
+    - rmse
+    - r2
+
+  # Random State
+  random_state: 42
+
+  # Verbose
+  verbose: 1

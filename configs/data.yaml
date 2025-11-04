@@ -1,0 +1,29 @@
+# Data Configuration
+data:
+  # File Names
+  files:
+    train: train.csv
+    test: test.csv
+    bus_feature: bus_feature.csv
+    subway_feature: subway_feature.csv
+    sample_submission: sample_submission.csv
+
+  # Target Column
+  target: target
+
+  # Feature Engineering
+  features:
+    use_bus: true
+    use_subway: true
+
+  # Preprocessing
+  preprocessing:
+    handle_missing: true
+    missing_strategy: median  # median, mean, drop
+    scale_features: false  # Tree-based models don't need scaling
+
+  # Train/Validation Split
+  split:
+    val_size: 0.2
+    shuffle: true
+    stratify: false

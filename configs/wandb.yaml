@@ -1,0 +1,26 @@
+# Weights & Biases Configuration
+wandb:
+  # WandB Settings
+  enabled: true
+  project: real-estate-price-prediction
+  entity: null  # Your wandb username or team name (set via CLI or environment)
+  tags:
+    - ml
+    - regression
+    - real-estate
+
+  # Logging Settings
+  log:
+    interval: 1  # Log every N steps
+    model: false  # Save model to wandb (can be large)
+    predictions: true  # Log prediction samples
+    metrics: true  # Log metrics
+
+  # Run Settings
+  run:
+    name: null  # Auto-generated if null
+    notes: null
+    group: null  # Group related runs
+
+  # Offline Mode (for testing without internet)
+  offline: false

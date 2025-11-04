@@ -1,0 +1,31 @@
+# Main Configuration File
+defaults:
+  - data
+  - train
+  - wandb
+  - model/lightgbm  # default model
+  - _self_
+
+# Project Settings
+project_name: real-estate-price-prediction
+seed: 42
+device: cpu
+
+# Paths (relative to project root)
+paths:
+  root: .
+  data: data
+  artifacts: artifacts
+  models: artifacts/models
+  plots: artifacts/plots
+  metrics: artifacts/metrics
+
+# Experiment Settings
+experiment:
+  name: ${model.name}_${now:%Y%m%d_%H%M%S}
+  save_model: true
+  save_predictions: true
+
+# Inference Settings
+inference:
+  model_path: null  # 특정 모델 경로 지정 (null이면 최신 모델 자동 탐색)

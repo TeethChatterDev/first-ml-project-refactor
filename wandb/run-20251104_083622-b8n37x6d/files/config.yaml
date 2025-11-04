@@ -1,0 +1,148 @@
+_wandb:
+    value:
+        cli_version: 0.22.3
+        e:
+            lde8s73h4vw3nwksqit68vwvbr3yu85l:
+                cpu_count: 32
+                cpu_count_logical: 64
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "1965728006144"
+                        used: "151579602944"
+                email: a01067511025@gmail.com
+                executable: /opt/conda/envs/ml-refactor/bin/python
+                git:
+                    commit: ec923717cfad024a82129adcb0692256cc78e8a7
+                    remote: https://github.com/TeethChatterDev/first-ml-project-refactor.git
+                gpu: NVIDIA GeForce RTX 3090
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 10496
+                      memoryTotal: "25769803776"
+                      name: NVIDIA GeForce RTX 3090
+                      uuid: GPU-4ce16533-972e-e967-c267-3277d9fde209
+                host: instance-16851
+                memory:
+                    total: "270172200960"
+                os: Linux-5.4.0-166-generic-x86_64-with-glibc2.31
+                program: -m src.train
+                python: CPython 3.10.19
+                root: /root/ml_project/first-ml-project-refactor
+                startedAt: "2025-11-04T08:36:22.104955Z"
+                writerId: lde8s73h4vw3nwksqit68vwvbr3yu85l
+        m: []
+        python_version: 3.10.19
+        t:
+            "1":
+                - 5
+                - 8
+                - 50
+                - 53
+            "2":
+                - 5
+                - 8
+                - 50
+                - 53
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.10.19
+            "5": 0.22.3
+            "12": 0.22.3
+            "13": linux-x86_64
+data:
+    value:
+        features:
+            use_bus: true
+            use_subway: true
+        files:
+            bus_feature: bus_feature.csv
+            sample_submission: sample_submission.csv
+            subway_feature: subway_feature.csv
+            test: test.csv
+            train: train.csv
+        preprocessing:
+            handle_missing: true
+            missing_strategy: median
+            scale_features: false
+        split:
+            shuffle: true
+            stratify: false
+            val_size: 0.2
+        target: target
+device:
+    value: cpu
+experiment:
+    value:
+        name: lightgbm_20251104_083621
+        save_model: true
+        save_predictions: true
+model:
+    value:
+        name: lightgbm
+        params:
+            boosting_type: gbdt
+            colsample_bytree: 0.8
+            learning_rate: 0.05
+            max_depth: -1
+            metric: rmse
+            min_child_samples: 20
+            min_child_weight: 0.001
+            n_estimators: 1000
+            n_jobs: -1
+            num_leaves: 31
+            objective: regression
+            random_state: 42
+            reg_alpha: 0
+            reg_lambda: 0
+            subsample: 0.8
+            subsample_freq: 1
+            verbose: -1
+paths:
+    value:
+        artifacts: artifacts
+        data: data
+        metrics: artifacts/metrics
+        models: artifacts/models
+        plots: artifacts/plots
+        root: .
+project_name:
+    value: real-estate-price-prediction
+seed:
+    value: 42
+train:
+    value:
+        early_stopping:
+            enabled: true
+            metric: rmse
+            patience: 50
+        metrics:
+            - mae
+            - rmse
+            - r2
+        n_folds: 5
+        random_state: 42
+        use_cross_validation: true
+        verbose: 1
+wandb:
+    value:
+        enabled: true
+        entity: null
+        log:
+            interval: 1
+            metrics: true
+            model: false
+            predictions: true
+        offline: false
+        project: real-estate-price-prediction
+        run:
+            group: null
+            name: null
+            notes: null
+        tags:
+            - ml
+            - regression
+            - real-estate
