@@ -77,7 +77,7 @@
 ---
 
 ## 📂 프로젝트 구조
-
+```bash
 first-ml-project-refactor/
 │
 ├── README.md                         # 프로젝트 설명 문서
@@ -142,7 +142,7 @@ first-ml-project-refactor/
 └── assets/                           # 리소스 파일
     └── fonts/
         └── NanumGothic-Regular.ttf   # 한글 폰트
-
+```
 ---
 
 ---
@@ -185,7 +185,7 @@ python -m src.infer inference.model_path=/root/ml_project/first-ml-project-refac
 
 > 💡 **모든 과정은 CLI 기반으로 실행 가능하며, `configs/` 내 설정 파일만 수정하면 동일한 결과를 재현할 수 있습니다.**
 
-```
+
 
 ---
 ## 📚 배운 점
