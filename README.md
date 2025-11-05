@@ -1,6 +1,6 @@
 
 ---
-# 🧠 # first-ml-project-refactor (Refactored)
+# 🧠  first-ml-project-refactor (Refactored)
 
 이 프로젝트는 제가 처음으로 진행했던 머신러닝 프로젝트를 **구조적이고 재현 가능한 형태로 리팩터링**한 버전입니다.  
 처음 프로젝트에서는 코드 구조나 버전 관리가 부족했지만, 이번에는 개선 과정을 통해 성장한 점을 담았습니다.
